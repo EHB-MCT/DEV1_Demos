@@ -126,6 +126,16 @@ export function strokeEllipse(x, y, rX, rY) {
     context.stroke();
 }
 
+export function fillAndStrokeCircle(x, y, radius) {
+    fillCircle(x, y, radius);
+    strokeCircle(x, y, radius);
+}
+
+export function fillAndStrokeEllipse(x, y, w, h) {
+    fillEllipse(x, y, w, h);
+    strokeCircle(x, y, w, h);
+}
+
 /**
  * Draws a line between 2 coordinates
  * @param {number} x1 the x coordinate of the start of the line
